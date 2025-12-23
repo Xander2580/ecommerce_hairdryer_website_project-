@@ -1,0 +1,37 @@
+/* assets/css/login.css */
+/* Login specific styles */
+.auth-container {
+    border-top: 5px solid var(--primary);
+}
+
+.form-group:nth-child(1) i {
+    /* Email icon */
+    content: "\f0e0";
+}
+
+.form-group:nth-child(2) i {
+    /* Password icon */
+    content: "\f023";
+}
+
+.form-group i::before {
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+}
+
+
+.form-group:nth-child(1) i::before {
+    content: "\f0e0"; 
+}
+
+.form-group:nth-child(2) i::before {
+    content: "\f023"; 
+}
+
+.forgot-password {
+    display: block;
+    text-align: right;
+    margin-top: -15px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}

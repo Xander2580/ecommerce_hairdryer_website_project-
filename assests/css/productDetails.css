@@ -1,0 +1,68 @@
+/* ===== Page polish (no conflicts with your existing CSS) ===== */
+    .breadcrumbs{font-size:.95rem;color:#6c757d;margin:.5rem 0 1rem}
+    .breadcrumbs a{color:#6c757d;text-decoration:none}
+    .breadcrumbs a:hover{text-decoration:underline}
+
+    .pd-wrap{display:flex;flex-wrap:wrap;gap:24px}
+    .pd-left{flex:1 1 480px;min-width:300px}
+    .pd-right{flex:1 1 420px;min-width:300px}
+
+    /* Gallery */
+    .pd-gallery{position:sticky;top:110px;border-radius:12px;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.05);padding:14px}
+    .pd-hero{width:100%;aspect-ratio:1/1;background:#f3f4f6;border-radius:10px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+    .pd-hero img{max-width:100%;max-height:100%;object-fit:contain}
+    .pd-thumbs{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap}
+    .pd-thumbs button{width:72px;height:72px;border-radius:10px;border:2px solid transparent;background:#f3f4f6;padding:0;display:flex;align-items:center;justify-content:center;cursor:pointer}
+    .pd-thumbs button.active{border-color:#0046ff}
+    .pd-thumbs img{width:100%;height:100%;object-fit:contain}
+
+    /* Buy box */
+    .pd-card{border-radius:12px;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.05)}
+    .pd-card .pd-body{padding:16px}
+    .pd-title{font-size:1.6rem;margin:0 0 .35rem}
+    .pd-sub{color:#6b7280}
+
+    .pd-rating{display:flex;align-items:center;gap:10px;margin:.35rem 0 .75rem}
+    .stars{color:#f59e0b;letter-spacing:1px}
+    .pd-price{display:flex;align-items:baseline;gap:10px;margin:.5rem 0 1rem}
+    .price{font-size:1.9rem;font-weight:800;color:#0046ff}
+    .old-price{text-decoration:line-through;color:#9ca3af;font-weight:600}
+    .save-pill{background:#e8f7ee;color:#15803d;border-radius:999px;padding:.2rem .6rem;font-weight:700;font-size:.85rem}
+
+    .stock-badge{padding:.35rem .6rem;border-radius:8px;font-weight:700}
+    .stock-in{background:#e8f7ee;color:#15803d}
+    .stock-out{background:#fdecec;color:#b91c1c}
+
+    .pd-feats{margin:1rem 0 .75rem;display:grid;grid-template-columns:1fr 1fr;gap:6px 16px}
+    .pd-feats li{list-style:"✓ ";padding-left:.25rem}
+
+    .qty-wrap{display:flex;align-items:center;gap:10px}
+    .qty{width:72px;padding:.55rem .65rem;text-align:center;border:1px solid #ddd;border-radius:8px}
+    .qty-btn{width:38px;height:38px;border:1px solid #ddd;border-radius:8px;background:#fff;cursor:pointer}
+
+    .cta-wrap{display:flex;flex-wrap:wrap;gap:12px;margin-top:14px}
+    .btn-buy{background:linear-gradient(135deg,#001bb7 0%,#0046ff 100%);color:#fff;transition: all 0.3s ease;position: relative;overflow: hidden;transform: translateY(0);box-shadow: 0 4px 12px rgba(0, 27, 183, 0.3)}
+    .btn-buy:hover{background: linear-gradient(135deg,#0046ff 0%,#001bb7 100%);color:#fff;transform: translateY(-2px);box-shadow: 0 8px 20px rgba(0, 27, 183, 0.4)}
+    .btn-buy:active{transform: translateY(0);box-shadow: 0 4px 12px rgba(0, 27, 183, 0.3)}
+    .btn-buy::before {content: '';position: absolute;top: 0;left: -100%;width: 100%;height: 100%;background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);transition: left 0.5s}
+    .btn-buy:hover::before {left: 100%}
+
+    /* Tabs */
+    .tabs{display:flex;gap:8px;flex-wrap:wrap;border-bottom:1px solid #e9e9e9;margin-bottom:1rem;padding:0 16px}
+    .tab-btn{padding:.55rem .9rem;border-radius:8px 8px 0 0;background:#f5f7ff;color:#0046ff;border:1px solid #ccd7ff;border-bottom:none;cursor:pointer;font-weight:700}
+    .tab-btn.active{background:#fff;border-color:#ccd7ff;color:#001bb7}
+    .tab-pane{display:none;padding:0 16px 16px}
+    .tab-pane.active{display:block}
+
+    .specs{width:100%;border-collapse:collapse}
+    .specs th,.specs td{padding:.6rem .75rem;border-bottom:1px solid #eee}
+    .specs th{width:35%;color:#6b7280;text-align:left}
+
+    /* Related */
+    .mini-card{border-radius:12px;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.05);overflow:hidden}
+    .mini-card img{width:100%;height:150px;object-fit:cover}
+    .mini-card .card-body{padding:.9rem}
+
+    @media (max-width: 992px){
+      .pd-gallery{position:relative;top:auto}
+    }

@@ -1,0 +1,66 @@
+/* assets/css/register.css */
+/* Register specific styles */
+.auth-container {
+    border-top: 5px solid var(--accent);
+}
+
+/* Add icons for each field */
+.form-group:nth-child(1) i::before {
+    content: "\f007"; /* user */
+}
+
+.form-group:nth-child(2) i::before {
+    content: "\f007"; /* user */
+}
+
+.form-group:nth-child(3) i::before {
+    content: "\f0e0"; /* envelope */
+}
+
+.form-group:nth-child(4) i::before {
+    content: "\f023"; /* lock */
+}
+
+.form-group:nth-child(5) i::before {
+    content: "\f023"; /* lock */
+}
+
+.form-group:nth-child(6) i::before {
+    content: "\f095"; /* phone */
+}
+
+.form-group:nth-child(7) i::before {
+    content: "\f1ad"; /* address (using map-marker-alt) */
+    top: 20px;
+}
+
+.form-group:nth-child(8) i::before {
+    content: "\f3c5"; /* city (using city) */
+}
+
+/* Make the address textarea icon align properly */
+.form-group textarea + i {
+    top: 20px;
+}
+
+/* Password strength indicator */
+.password-strength {
+    margin-top: 5px;
+    height: 5px;
+    background: #eee;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.password-strength-bar {
+    height: 100%;
+    width: 0%;
+    background: var(--danger);
+    transition: width 0.3s;
+}
+
+.password-strength-text {
+    font-size: 12px;
+    color: var(--gray);
+    margin-top: 3px;
+}
